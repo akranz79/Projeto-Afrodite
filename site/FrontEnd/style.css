@@ -29,7 +29,7 @@ nav {
     height: 8vh; /*VH é a unidade responsiva para se adaptar a tela do usuário*/
 }
 
-main {
+.background-home {
     background: url("../imagens/background2.jpg") no-repeat center center; /*selecionando a imagem de fundo, sem repetir, centralizando no eixo X e Y por isso sse repete o comando center*/
     background-size: cover; /*caso a resolução do monitor seja maior que a imagem*/
     height: 92vh;
@@ -56,6 +56,18 @@ main {
     background: #ffff;
     margin: 8px;
     transition: 0.3s;
+}
+
+.butoes-cadastro {
+    align-items: center;
+    padding: 20px;
+    margin: 15px;
+}
+
+.cabecalho {
+    align-items: center;
+    padding: 20px;
+    margin: 15px;
 }
 
 /*aparecer o menu de navegação quando a tela atingir um determinado ponto de parada*/
