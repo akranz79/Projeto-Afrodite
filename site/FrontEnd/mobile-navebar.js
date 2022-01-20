@@ -18,7 +18,7 @@ class MobileNavbar { /*criando a classe*/
     handleClick(){
         this.navList.classList.toggle(this.activeClass);
         this.mobileMenu.classList.toggle(this.activeClass);
-        this.animateLinks() /*criando novo metodo para todo vez que for clicado*/
+        this.animateLinks() /*criando novo metodo para toda vez que for clicado*/
     }
     
     /* Criando um Metodo que adiciona um evento de clique no botão do menu*/

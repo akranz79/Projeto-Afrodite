@@ -36,7 +36,7 @@ nav {
 }
 
 .nav-list { /*configurar a nossa UL*/
-    list-style: none;
+    list-style-type: none;
     display: flex;
 }
 
@@ -44,6 +44,11 @@ nav {
     letter-spacing: 3px;
     margin-left: 32px;
 }
+
+.nav-list ul li { /* Alinhando os itens do menu */
+    display: inline-block;
+}
+
 
 .mobile-menu {
     display: none; /*escondendo o menu hamburger em telas grandes, só vai aparecer em tela pequena*/
