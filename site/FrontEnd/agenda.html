@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AFRODITE</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="formulario.css">
     </head>
     <body>
         <header>
@@ -28,11 +29,34 @@
             </nav>
         </header>
 
-        <div class="cabecalho">
-            <h1>DADOS DA AGENDA A SER PREENCHIDO</h1>
+        <div id="formulario">
+            <div class="cabecalho">
     
-            <P>CRIAR OS FORMULARIOS NECESSÁRIOS</P>
-        </div>    
+            <h1 id="titulo">AGENDA</h1>
+            <br>
+            </div>
+    
+            <form method="get" action=""> <!--COLOCAR A LINGUAGEM DO SERVICOR-->
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="nome"><strong>Busca por Cliente:</strong></label>
+                        <input type="text" name="nome" id="nome" placeholder="cliente">
+
+                        <div class="campo">
+                            <label for="data-agendamento"><strong>Data do Agendamento:</strong></label>
+                            <input type="date" name="data-agendamento" id="data-agendamento">
+                        </div>
+                    </div>
+                </fieldset>
+            
+            <div>
+                <button class="botao" type="">Busca</button>
+                <button class="botao" type=""><a href="novo-agendamento.html">Novo Agendamento</a></button>
+            </div>
+    
+            </form>
+        </div>
+        
 
         <main class="background-pages"> <!--Espaço para inserir o Background-->
 

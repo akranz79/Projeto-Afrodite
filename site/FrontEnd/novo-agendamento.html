@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html lang="PT-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AFRODITE</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="formulario.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a class="logo" href="../FrontEnd/home.html">AFRODITE</a>
+            
+                <div class="mobile-menu"><!--criando o menu do tipo hamburger-->
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+                <ul class="nav-list"> <!--Crinado a lista não ordenada do menu-->
+                    <li><a class="menu" href="../FrontEnd/home.html">HOME</a></li>
+                    <li><a href="../FrontEnd/agenda.html">AGENDA</a></li>
+                    <li><a href="../FrontEnd/cadastro.html">CADASTRO</a></li>
+                    <li><a href="../FrontEnd/financeiro.html">FINANCEIRO</a></li>
+                    <li><a href="../FrontEnd/configuracao.html">CONFIGURAÇÃO</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="formulario">
+            <div class="cabecalho">
+    
+            <h1 id="titulo">NOVO AGENDAMENTO</h1>
+            <br>
+            </div>
+        
+            <form method="get" action=""> <!--COLOCAR A LIBGUAGEM DO SERVICOR-->
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="nome"><strong>Nome:</strong></label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite o nome" required>
+                    </div>
+                </fieldset>
+                <fieldset class="grupo"> 
+                
+                    <div>
+                        <label for="pe"><strong>Pé</strong></label>
+                        <input type="checkbox" name="pe" id="pe">
+                    </div>
+
+                    <div>
+                        <label for="mao"><strong>Mão</strong></label>
+                        <input type="checkbox" name="mao" id="mao">
+                    </div>
+                    
+                    <div>
+                        <label for="cabelo"><strong>Cabelo</strong></label>
+                        <input type="checkbox" name="cabelo" id="cabelo">
+                    </div>
+                                
+                    <div> 
+                        <label for="depilacao"><strong>Depilação</strong></label>
+                        <input type="checkbox" name="depilacao" id="depilacao">
+                    </div>                  
+
+                
+                </fieldset>
+
+                <div class="campo">
+                    <label for=""><strong>Observações:</strong></label>
+                    <textarea name="observacoes" id="observacoes" cols="30" rows="4"></textarea>
+                </div>
+        
+                <div>
+                    <button class="botao" type="submit">Salvar</button>
+                </div>
+            </form>
+        </div>
+
+    </body>
+    </html>
