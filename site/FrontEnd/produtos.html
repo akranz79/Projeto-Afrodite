@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AFRODITE</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="formulario.css">
 </head>
 <body>
     <header>
@@ -31,9 +32,43 @@
 
     </main>
 
-    <h1>CADASTRO DE PRODUTOS</h1>
+    <div id="formulario">
+        <div class="cabecalho">
 
-    <P>CRIAR OS FORMULARIOS NECESSÁRIOS</P>
+        <h1 id="titulo">CADASTRO DE PROFUTOS</h1>
+        <br>
+        </div>
+
+        <form action="">
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="produto"><strong>Produto:</strong></label>
+                    <input type="text" name="produto" id="produto" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="campo">
+                    <label for="codigoproduto"><strong>Código do Produto:</strong></label>
+                    <input type="text" name="codigoproduto" id="codigoproduto" required>
+                </div>
+                <div class="campo">
+                    <label for="valor"><strong>valor:</strong></label>
+                    <input type="text" name="valor" id="valor">
+                </div>
+            </fieldset>
+
+        <div class="campo">
+            <label for=""><strong>Descrição:</strong></label>
+            <textarea name="descricao" id="descricao" cols="30" rows="6"></textarea>
+        </div>
+
+        <div>
+            <button class="botao" type="submit">Salvar</button>
+        </div>
+
+        </form>
+    </div>
 
     <script src="mobile-navebar.js"></script><!--Referenciando o arquivo em JavaScript-->
 </body>
