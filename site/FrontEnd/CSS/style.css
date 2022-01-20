@@ -30,7 +30,7 @@ nav {
 }
 
 .background-home {
-    background: url("../imagens/background2.jpg") no-repeat center center; /*selecionando a imagem de fundo, sem repetir, centralizando no eixo X e Y por isso sse repete o comando center*/
+    background: url("/site/imagens/background.jpg") no-repeat center center; /*selecionando a imagem de fundo, sem repetir, centralizando no eixo X e Y por isso sse repete o comando center*/
     background-size: cover; /*caso a resolução do monitor seja maior que a imagem*/
     height: 92vh;
 }
@@ -48,7 +48,6 @@ nav {
 .nav-list ul li { /* Alinhando os itens do menu */
     display: inline-block;
 }
-
 
 .mobile-menu {
     display: none; /*escondendo o menu hamburger em telas grandes, só vai aparecer em tela pequena*/
