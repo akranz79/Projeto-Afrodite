@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body {
+    background-color: #ffdffd;
+}
+
 a {
     color: #ffff;
     text-decoration: none; /* tirando o sublinhado*/
@@ -35,11 +39,6 @@ nav {
     height: 92vh;
 }
 
-.background-pages {
-    background: url("../imagens/background.jpg");
-    background-size: cover;
-    height: 92vh;
-}
 
 .nav-list { /*configurar a nossa UL*/
     list-style-type: none;
@@ -78,6 +77,7 @@ nav {
     align-items: center;
     padding: 20px;
     margin: 15px;
+    background-color: #fde7fc;
 }
 
 /*aparecer o menu de navegação quando a tela atingir um determinado ponto de parada*/
