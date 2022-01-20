@@ -44,8 +44,8 @@ fieldset.grupo .campo {
     margin-right: 1em;
 }
 
-.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"], .campo input[type="date"], .campo select, .campo textarea {
-    padding: 0.2em;
+.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"], .campo input[type="date"], .campo input[type="time"], .campo select, .campo textarea {
+    padding: 0.6em;
     box-shadow: 2px rgba(0,0,0,0.2);
     display: block;
     background: #FFFFFF;
