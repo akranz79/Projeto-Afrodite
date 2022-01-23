@@ -37,4 +37,11 @@ echo " ". $email. "<br/>";
 echo " ". $nascimento. "<br/>";
 echo " ". $observacao. "<br/>";
 
+
 ?>
+
+<script>
+        setTimeout(function() {
+            window.location.href = "../FrontEnd/clientes.html";
+        }, 5000);
+</script>

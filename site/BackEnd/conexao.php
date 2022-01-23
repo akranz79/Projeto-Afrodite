@@ -1,8 +1,8 @@
 <?php
 
 $server ="localhost";
-$user = "root";
-$pass = "Kranz@123";
+$user = "usuario";
+$pass = "senha";
 $bd = "salao";
 
 

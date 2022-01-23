@@ -35,3 +35,9 @@ echo " ". $valor. "<br/>";
 echo " ". $descricao. "<br/>";
 
 ?>
+
+<script>
+        setTimeout(function() {
+            window.location.href = "../FrontEnd/clientes.html";
+        }, 5000);
+</script>
