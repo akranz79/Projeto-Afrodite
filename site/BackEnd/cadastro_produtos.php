@@ -43,6 +43,6 @@ echo " ". $descricao. "<br/>";
 
 <script>
         setTimeout(function() {
-            window.location.href = "../FrontEnd/clientes.html";
+            window.location.href = "../FrontEnd/produtos.html";
         }, 5000);
 </script>
