@@ -39,7 +39,7 @@
             <form action="" method="post">
                 <div>
                     <label for="">E-mail</label>
-                    <input type="email" name="login" id="login">
+                    <input type="text" name="login" id="login">
                     <br>
             
                     <label for="">Senha</label>
@@ -54,6 +54,7 @@
     if (isset($_POST['login'])) {
         $login = $_POST['login'];
         $senha = md5($_POST['senha']);
+        //var_dump($login, $senha);
 
         include "../BackEnd/conexao.php";
         $sql = "SELECT * FROM usuarios WHERE login = '$login'";
@@ -62,6 +63,7 @@
         $result = mysqli_query($conn, $sql);
         
         $num_registros = mysqli_num_rows($result);
+        //var_dump($num_registros);
        
             if ($num_registros == 1) {
                 $linha = mysqli_fetch_assoc($result);
@@ -71,11 +73,11 @@
                     $_SESSION['login'] = $login;
                     header("location: home.php");
             } else {
-            echo "Login invalido";
+            echo "Senha invalida";
 
             } 
             } else {
-                echo "Login ou senha nao encontrado ou invalido.";
+                echo "Login não encontrado.";
             } 
     }
 ?>

@@ -46,3 +46,6 @@ echo " ". $descricao. "<br/>";
             window.location.href = "../FrontEnd/produtos.php";
         }, 5000);
 </script>
+            window.location.href = "../FrontEnd/produtos.html";
+        }, 5000);
+</script>

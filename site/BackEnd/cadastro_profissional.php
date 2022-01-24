@@ -44,3 +44,6 @@ echo " ". $observacoes. "<br/>";
             window.location.href = "../FrontEnd/profissional.php";
         }, 5000);
 </script>
+            window.location.href = "../FrontEnd/profissional.html";
+        }, 5000);
+</script>

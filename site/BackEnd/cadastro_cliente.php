@@ -43,5 +43,6 @@ echo " ". $observacao. "<br/>";
 <script>
         setTimeout(function() {
             window.location.href = "../FrontEnd/clientes.php";
+            window.location.href = "../FrontEnd/clientes.html";
         }, 5000);
 </script>
