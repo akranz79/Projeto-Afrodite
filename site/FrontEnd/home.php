@@ -1,3 +1,4 @@
+<?php include "../BackEnd/validar.php" ?>
 <!DOCTYPE html>
 <html lang="PT-br">
 <head>
@@ -10,7 +11,7 @@
 <body>
     <header>
         <nav>
-            <a class="logo" href="../FrontEnd/home.html">AFRODITE</a>
+            <a class="logo" href="../FrontEnd/home.php">AFRODITE</a>
            
             <div class="mobile-menu"><!--criando o menu do tipo hamburger-->
                 <div class="line1"></div>
@@ -19,14 +20,16 @@
             </div>
 
             <ul class="nav-list"> <!--Crinado a lista não ordenada do menu-->
-                <li><a class="menu" href="../FrontEnd/home.html">HOME</a></li>
+                <li><a class="menu" href="../FrontEnd/home.php">HOME</a></li>
                 <li><a href="../FrontEnd/agenda.html">AGENDA</a></li>
                 <li><a href="../FrontEnd/cadastro.html">CADASTRO</a>
+                <li><a href="../BackEnd/logout.php">LOGOUT</a>
+
                     <ul>
-                        <li><a href="../FrontEnd/clientes.html">CLIENTES</a></li>
-                        <li><a href="../FrontEnd/servicos.html">SERVIÇOS</a></li>
-                        <li><a href="../FrontEnd/produtos.html">PRODUTOS</a></li>
-                        <li><a href="../FrontEnd/profissionais.html">PROFISSIONAIS</a></li>
+                        <li><a href="../FrontEnd/clientes.php">CLIENTES</a></li>
+                        <li><a href="../FrontEnd/servicos.php">SERVIÇOS</a></li>
+                        <li><a href="../FrontEnd/produtos.php">PRODUTOS</a></li>
+                        <li><a href="../FrontEnd/profissionais.php">PROFISSIONAIS</a></li>
                     </ul>
                 </li>
                 <li><a href="../FrontEnd/financeiro.html">FINANCEIRO</a></li>

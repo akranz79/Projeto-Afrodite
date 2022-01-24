@@ -1,3 +1,4 @@
+<?php include "../BackEnd/validar.php" ?>
 <!DOCTYPE html>
 <html lang="PT-br">
 <head>
@@ -11,7 +12,7 @@
 <body>
     <header>
         <nav>
-            <a class="logo" href="../FrontEnd/home.html">AFRODITE</a>
+            <a class="logo" href="../FrontEnd/home.php">AFRODITE</a>
            
             <div class="mobile-menu"><!--criando o menu do tipo hamburger-->
                 <div class="line1"></div>
@@ -20,11 +21,11 @@
             </div>
 
             <ul class="nav-list"> <!--Crinado a lista não ordenada do menu-->
-                <li><a class="menu" href="../FrontEnd/home.html">HOME</a></li>
-                <li><a href="../FrontEnd/clientes.html">CLIENTES</a></li>
-                <li><a href="../FrontEnd/servicos.html">SERVIÇOS</a></li>
-                <li><a href="../FrontEnd/produtos.html">PRODUTOS</a></li>
-                <li><a href="../FrontEnd/profissionais.html">PROFISSIONAIS</a></li>
+                <li><a class="menu" href="../FrontEnd/home.php">HOME</a></li>
+                <li><a href="../FrontEnd/clientes.php">CLIENTES</a></li>
+                <li><a href="../FrontEnd/servicos.php">SERVIÇOS</a></li>
+                <li><a href="../FrontEnd/produtos.php">PRODUTOS</a></li>
+                <li><a href="../FrontEnd/profissionais.php">PROFISSIONAIS</a></li>
             </ul>
         </nav>
     </header>
@@ -39,7 +40,7 @@
         <br>
         </div>
 
-        <form action="">
+        <form action="../BackEnd/cadastro_profissional.php" method="post">
             <fieldset class="grupo">
                 <div class="campo">
                     <label for="nome"><strong>Nome:</strong></label>
@@ -62,7 +63,7 @@
                 </div>
                 <div class="campo">
                     <label for="cpf"><strong>CPF/CNPJ:</strong></label>
-                    <input type="text" name="cpf" id="cpf" pattern="[0-9]" required>
+                    <input type="text" name="cpf" id="cpf" pattern="[0-9]{11}" required>
                 </div>
                
             </fieldset>

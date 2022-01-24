@@ -1,3 +1,4 @@
+<?php include "../BackEnd/validar.php" ?>
 <!DOCTYPE html>
 <html lang="PT-br">
 <head>
@@ -11,7 +12,7 @@
 <body>
     <header>
         <nav>
-            <a class="logo" href="../FrontEnd/home.html">AFRODITE</a>
+            <a class="logo" href="../FrontEnd/home.php">AFRODITE</a>
            
             <div class="mobile-menu"><!--criando o menu do tipo hamburger-->
                 <div class="line1"></div>
@@ -20,11 +21,11 @@
             </div>
 
             <ul class="nav-list"> <!--Crinado a lista não ordenada do menu-->
-                <li><a class="menu" href="../FrontEnd/home.html">HOME</a></li>
-                <li><a href="../FrontEnd/clientes.html">CLIENTES</a></li>
-                <li><a href="../FrontEnd/servicos.html">SERVIÇOS</a></li>
-                <li><a href="../FrontEnd/produtos.html">PRODUTOS</a></li>
-                <li><a href="../FrontEnd/profissionais.html">PROFISSIONAIS</a></li>
+                <li><a class="menu" href="../FrontEnd/home.php">HOME</a></li>
+                <li><a href="../FrontEnd/clientes.php">CLIENTES</a></li>
+                <li><a href="../FrontEnd/servicos.php">SERVIÇOS</a></li>
+                <li><a href="../FrontEnd/produtos.php">PRODUTOS</a></li>
+                <li><a href="../FrontEnd/profissionais.php">PROFISSIONAIS</a></li>
             </ul>
         </nav>
     </header>
@@ -35,22 +36,22 @@
     <div id="formulario">
         <div class="cabecalho">
 
-        <h1 id="titulo">CADASTRO DE PRODUTOS</h1>
+        <h1 id="titulo">CADASTRO DE SERVIÇOS</h1>
         <br>
         </div>
 
-        <form action="">
+        <form action="../BackEnd/cadastro_servicos.php" method="post">
             <fieldset class="grupo">
                 <div class="campo">
-                    <label for="produto"><strong>Produto:</strong></label>
-                    <input type="text" name="produto" id="produto" required>
+                    <label for="servicos"><strong>Serviço:</strong></label>
+                    <input type="text" name="servico" id="servico" required>
                 </div>
             </fieldset>
 
             <fieldset>
                 <div class="campo">
-                    <label for="codigoproduto"><strong>Código do Produto:</strong></label>
-                    <input type="text" name="codigoproduto" id="codigoproduto" required>
+                    <label for="duracao"><strong>Tempo de Duração:</strong></label>
+                    <input type="time" name="duracao" id="duracao" required>
                 </div>
                 <div class="campo">
                     <label for="valor"><strong>valor:</strong></label>
@@ -60,7 +61,7 @@
 
         <div class="campo">
             <label for=""><strong>Descrição:</strong></label>
-            <textarea name="descricao" id="descricao" cols="30" rows="6"></textarea>
+            <textarea name="descricao" id="descricao" cols="30" rows="4"></textarea>
         </div>
 
         <div>
